@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    scrollbar-width: none;
 }
 
 body {
@@ -10,8 +11,35 @@ body {
     font-weight: 200;
 }
 
+.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#sacredflame {
+    width: 20vw;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#sanguineembrace {
+    width: 20vw;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.top-nav {
+    margin: 0px;
+    padding: 0px;
+}
+
 header {
     text-align: center;
+    padding: 0px;
+    margin: 0px;
 }
 
 header>img {
@@ -32,7 +60,10 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #203f62;
+    background-color: #1f1f1f;
+    position: sticky;
+    top: 0;
+    width: 100vw;
   }
   
   li {
