@@ -16,6 +16,7 @@ header {
     margin: 0px;
     display: flex;
     background-color: black;
+    border-bottom: 2px solid #303030;
 }
 
 header>img {
@@ -49,11 +50,17 @@ ul {
     width: 100vw;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
   }
   
   li {
     float: left;
+  }
+
+  li:hover {
+    background-color: #2a2a2a;
+    color: #181818;
+    font-weight: 400;
   }
   
   li a {
@@ -62,13 +69,19 @@ ul {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 400;
   }
   
   /* Change the link color to #111 (black) on hover */
-  li a:hover {
-    background-color: #e7e7e7;
+  /*li a:hover {
+    background-color: #848484;
+    color: #181818;
+    font-weight: 400;
+  }*/
+
+  .activeLink {
+    background-color: #41bd3f;
     color: #181818;
     font-weight: 400;
   }
@@ -96,6 +109,7 @@ ul {
     background-color: #2a2a2a;
     scale: 1.01;
     border: 1px solid rgb(91, 227, 91);
+    cursor: pointer;
 }
 
 .herocard>h1 {
@@ -127,8 +141,6 @@ ul {
 .content {
     padding: 1rem 2rem 1rem 2rem;
 }
-
-
 
 footer {
     bottom: 0;
