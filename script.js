@@ -12,5 +12,5 @@ var picPaths = ['images/SacredFlameBanner.png', 'images/SanguineEmbraceBanner.pn
   }
 
   window.onload = function() {
-    setInterval(swapImage, 5000); // Call swapImage() every 5 seconds
+    setInterval(swapImage, 7000); // Call swapImage() every 5 seconds
   }
