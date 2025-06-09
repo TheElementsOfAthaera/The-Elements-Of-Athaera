@@ -14,3 +14,7 @@ var picPaths = ['images/SacredFlameBanner.png', 'images/SanguineEmbraceBanner.pn
   window.onload = function() {
     setInterval(swapImage, 7000); // Call swapImage() every 5 seconds
   }
+
+  document.getElementById('banner').addEventListener('click', function() {
+    window.location.href = 'index.html'; // Redirect to index.html on click
+  });
