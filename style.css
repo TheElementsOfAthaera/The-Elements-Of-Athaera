@@ -152,10 +152,12 @@ ul {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 1.5rem;
+    font-weight: 400;
   }
   
   /* Change the link color to #111 (black) on hover */
   li a:hover {
     background-color: #e7e7e7;
     color: #181818;
+    font-weight: 400;
   }
