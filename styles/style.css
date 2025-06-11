@@ -230,4 +230,7 @@ footer {
         padding: 0 20px;
         font-size: 3vw;
     }
+    li a {
+        padding: 8px 10px;
+    }
   }
