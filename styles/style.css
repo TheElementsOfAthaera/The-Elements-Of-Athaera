@@ -82,6 +82,8 @@ ul {
   .hero>a {
     text-decoration: none;
     color: white;
+    margin: 10px;
+    list-style-type: none;
   }
   
   /* Change the link color to #111 (black) on hover */
@@ -114,7 +116,7 @@ ul {
     margin: 20px 10px 20px 10px;
     border: 1px solid transparent inset;
     border-radius: 15px;
-    width: 50vw;
+    width: 48vw;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, .3);
 }
 
@@ -124,7 +126,7 @@ ul {
     cursor: pointer;
 }
 
-.herocard>h1 {
+/*.herocard>h1 {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -132,7 +134,7 @@ ul {
     font-weight: 300;
     padding: 20px;
     font-size: 4vw;
-}
+}*/
 
 #sacredflame {
     width: 25vw;
@@ -155,12 +157,37 @@ ul {
     text-align: center;
 }
 
+#sacredFlameText>p {
+    font-size: 2vw;
+    text-align: center;
+    padding: 0 10px;
+}
+
 #sanguineembrace {
     width: 25vw;
     top: 0;
     right: 0;
     z-index: 2;
     padding: 10px;
+}
+
+#sanguineEmbraceText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#sanguineEmbraceText>h1 {
+    font-size: 3vw;
+    font-weight: 300;
+    text-align: center;
+}
+
+#sanguineEmbraceText>p {
+    font-size: 2vw;
+    text-align: center;
+    padding: 0 10px;
 }
 
 .content {
