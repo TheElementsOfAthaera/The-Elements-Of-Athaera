@@ -204,3 +204,30 @@ footer {
     padding: 10px;
     z-index: 3;
 }
+
+@media only screen and (max-width: 600px) {
+    .hero {
+        flex-direction: column;
+        align-items: center;
+    }
+    .herocard {
+        width: 90vw;
+        margin: 10px 0px;
+    }
+    #sacredFlameText>h1 {
+        padding: 10px;
+        font-size: 5vw;
+    }
+    #sacredFlameText>p {
+        padding: 0 20px;
+        font-size: 3vw;
+    }
+    #sanguineEmbraceText>h1 {
+        padding: 10px;
+        font-size: 5vw;
+    }
+    #sanguineEmbraceText>p {
+        padding: 0 20px;
+        font-size: 3vw;
+    }
+  }
