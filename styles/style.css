@@ -142,6 +142,19 @@ ul {
     padding: 10px;
 }
 
+#sacredFlameText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#sacredFlameText>h1 {
+    font-size: 3vw;
+    font-weight: 300;
+    text-align: center;
+}
+
 #sanguineembrace {
     width: 25vw;
     top: 0;
