@@ -78,6 +78,11 @@ ul {
     font-size: 1rem;
     font-weight: 400;
   }
+
+  .hero>a {
+    text-decoration: none;
+    color: white;
+  }
   
   /* Change the link color to #111 (black) on hover */
   /*li a:hover {
