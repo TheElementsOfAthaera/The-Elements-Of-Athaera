@@ -1,4 +1,4 @@
-var picPaths = ['images/SacredFlameBanner.png', 'images/SanguineEmbraceBanner.png']; // Array of image paths
+var picPaths = ['images/altbanner.png', 'images/altbanner3.png']; // Array of image paths
   var curPic = 0; // Counter for current image index
 
   function swapImage() {
