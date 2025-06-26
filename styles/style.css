@@ -45,6 +45,10 @@ header>img {
     border-bottom: 2px solid #303030;
 }
 
+#logo {
+    height: 5vh;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -70,12 +74,14 @@ ul {
   }
   
   li a {
-    display: block;
+    height: 6vh;
+    display: flex;
+    align-items: center;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 400;
   }
 
