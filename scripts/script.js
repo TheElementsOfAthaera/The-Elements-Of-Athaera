@@ -18,3 +18,20 @@ var picPaths = ['images/altbanner.png', 'images/altbanner3.png']; // Array of im
   document.getElementById('banner').addEventListener('click', function() {
     window.location.href = 'index.html'; // Redirect to index.html on click
   });
+
+  function resizeImages() {
+  var width = window.innerWidth || document.documentElement.clientWidth;
+  var image = document.getElementById('logo');
+
+  if (width >= 768) {
+    image.src = 'images/homebutton.png';
+  } else if (width >= 480) {
+    image.src = 'images/mobilelogo.png';
+  } else {
+    image.src = 'images/mobilelogo.png';
+  }
+}
+
+// Call the function on page load and window resize
+window.addEventListener('load', resizeImages);
+window.addEventListener('resize', resizeImages);
