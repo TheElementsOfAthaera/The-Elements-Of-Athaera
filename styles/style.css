@@ -55,6 +55,7 @@ header>img {
 
 #logo {
     height: 5vh;
+    padding: 3px;
 }
 
 ul {
@@ -76,7 +77,6 @@ ul {
   }
 
   li:hover {
-    background-color: #474747;
     color: #181818;
     font-weight: 400;
   }
@@ -92,6 +92,12 @@ ul {
     font-size: 1.2rem;
     font-weight: 400;
     -webkit-tap-highlight-color: transparent;
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, .5);
+    border-bottom: 2px solid transparent;
+  }
+
+  li a:hover {
+    border-bottom: 2px solid rgb(251, 198, 24);
   }
 
   .hero>a {
@@ -109,19 +115,12 @@ ul {
     list-style-type: none;
     -webkit-tap-highlight-color: transparent;
   }
-  
-  /* Change the link color to #111 (black) on hover */
-  /*li a:hover {
-    background-color: #848484;
-    color: #181818;
-    font-weight: 400;
-  }*/
 
   .activeLink {
-    background-color: #383838;
+    background-color: #1f1f1f;
     color: white;
     font-weight: 400;
-    border-bottom: 2px solid green;
+    border-bottom: 2px solid rgb(251, 198, 24);
   }
 
 .hero {
@@ -146,7 +145,7 @@ ul {
 
 .herocard:hover {
     background-color: #404040;
-    border: 1px solid rgb(91, 227, 91);
+    border: 1px solid rgb(251, 198, 24);
     cursor: pointer;
 }
 
@@ -173,20 +172,10 @@ ul {
 
 .heroPageCard:hover {
     background-color: #404040;
-    border: 1px solid rgb(91, 227, 91);
+    border: 1px solid rgb(251, 198, 24);
     cursor: pointer;
 }
 
-
-/*.herocard>h1 {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-weight: 300;
-    padding: 20px;
-    font-size: 4vw;
-}*/
 
 #sacredflame {
     width: 45%;
@@ -202,6 +191,8 @@ ul {
     justify-content: center;
     align-items: center;
     padding: 5px;
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, .5);
+    
 }
 
 #sacredFlameText>h1 {
@@ -230,6 +221,7 @@ ul {
     justify-content: center;
     align-items: center;
     padding: 5px;
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, .5);
 }
 
 #sanguineEmbraceText>h1 {
@@ -256,6 +248,7 @@ footer {
     font-size: .8rem;
     padding: 10px;
     z-index: 3;
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, .5);
 }
 
 @media only screen and (max-width: 720px) {
