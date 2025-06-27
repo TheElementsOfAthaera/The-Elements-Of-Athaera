@@ -23,6 +23,11 @@ body {
     -webkit-tap-highlight-color: transparent;
 }
 
+h3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 header {
     padding: 0px;
     margin: 0px;
