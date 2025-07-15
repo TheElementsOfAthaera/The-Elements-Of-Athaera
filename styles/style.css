@@ -30,9 +30,6 @@ h2 {
     font-size: 1.5rem;
 }
 
-p {
-    font-size: 1.2rem;
-}
 
 header {
     padding: 0px;
@@ -180,6 +177,7 @@ ul {
     flex-direction: row;
     justify-content: space-between;
     background-color: #303030;
+    align-items: center;
     padding: 5px;
     border: 1px solid transparent inset;
     border-radius: 15px;
@@ -194,6 +192,10 @@ ul {
     cursor: pointer;
 }
 
+/*.heroPageCardImage {
+    object-fit: contain;
+}*/
+
 #sacredflame {
     max-width: 50%;
     height: auto;
@@ -201,6 +203,7 @@ ul {
     left: 0;
     z-index: 2;
     padding: 10px;
+    flex-shrink: 0;
 }
 
 #sacredFlameText {
@@ -208,9 +211,8 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 20px 20px 20px;
+    padding: 20px;
     text-shadow: 0px 2px 3px rgba(0, 0, 0, .5);
-    font-size: auto;
 }
 
 #sacredFlameText>h1 {
@@ -223,7 +225,6 @@ ul {
     font-size: 2vw;
     text-align: center;
     padding: 0 10px;
-    font-size: 1.5rem;
 }
 
 #sanguineembrace {
@@ -253,7 +254,6 @@ ul {
     font-size: 2vw;
     text-align: center;
     padding: 0 10px;
-    font-size: 1.5rem;
 }
 
 .content {
@@ -271,39 +271,40 @@ footer {
     text-shadow: 0px 2px 3px rgba(0, 0, 0, .5);
 }
 
-
-
-@media screen and (max-width: 1660px) {
+@media screen and (max-width: 720px) {
     .hero {
         flex-direction: column;
         align-items: center;
     }
     .herocard {
         width: 90vw;
+        height: auto;
         margin: 10px 0px;
     }
     .heroPageCard {
-        width: 90vw;
+        width: 75vw;
+        height: auto;
         margin: 10px 0px;
+        flex-direction: column;
+        text-align: center;
     }
-    .sacredFlameText {
-        font-size: auto;
-    }
+    
     #sacredFlameText>h1 {
         padding: 10px;
-        font-size: auto;
+        font-size: 3.5vw;
     }
     #sacredFlameText>p {
         padding: 0 20px;
-        font-size: auto;
+        font-size: 3.5vw;
     }
+
     #sanguineEmbraceText>h1 {
         padding: 10px;
-        font-size: auto;
+        font-size: 3.5vw;
     }
     #sanguineEmbraceText>p {
         padding: 0 20px;
-        font-size: auto;
+        font-size: 3.5vw;
     }
     li a {
         padding: 8px 10px;
