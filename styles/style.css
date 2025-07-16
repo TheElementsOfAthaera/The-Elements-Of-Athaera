@@ -7,8 +7,6 @@
 body {
 	background-color: #181818;
     color: white;
-    font-family: Lexend;
-    font-weight: 200;
     z-index: 1;
     min-height: 100vh;
     display: flex;
@@ -21,6 +19,14 @@ body {
     #121212 5px
   );
     -webkit-tap-highlight-color: transparent;
+}
+
+
+.lexend {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
 }
 
 h2 {
