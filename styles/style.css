@@ -64,7 +64,6 @@ header>img {
     top: 0;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, .3);
     z-index: 10;
-    border-bottom: 2px solid #303030;
 }
 
 #logo {
@@ -112,6 +111,7 @@ ul {
 
   li a:hover {
     border-bottom: 2px solid rgb(251, 198, 24);
+    background-color: #303030;
   }
 
   .hero>a {
@@ -131,7 +131,7 @@ ul {
   }
 
   .activeLink {
-    background-color: #1f1f1f;
+    background-color: #303030;
     color: white;
     font-weight: 400;
     border-bottom: 2px solid rgb(251, 198, 24);
@@ -281,7 +281,7 @@ footer {
     text-shadow: 0px 2px 3px rgba(0, 0, 0, .5);
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 1200px) {
     .hero {
         flex-direction: column;
         align-items: center;
@@ -313,16 +313,6 @@ footer {
         padding: 20px 14px 20px 16px;
         -webkit-tap-highlight-color: transparent;
         text-align: center;
-        height: 8vh;
-    }
-    .top-nav {
-        margin: 0px;
-        padding: 0px;
-        position: sticky;
-        top: 0;
-        box-shadow: 0px 5px 10px rgba(0, 0, 0, .3);
-        z-index: 10;
-        border-bottom: 2px solid #303030;
         height: 8vh;
     }
     .pageHeadText {
