@@ -468,7 +468,7 @@ section h2 {
   .sidenav a {font-size: 18px;}
 }
 
-@media (max-width: 600px) {
+@media (max-width: 400px) {
     .sidenav {
         display: none;
     }
