@@ -1,34 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     <title>The Elements of Athaera</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body class="lexend">
-    <div class="top-nav" loading="lazy">
-        <nav>
-            <ul>
-                <li><a class="activeLink" href="index.html">
-                    <img id="logo" src="images/mobilelogo.png" alt="The Elements of Athaera Logo">
-                </a></li>
-                <li><a href="sacredFlame.html">Sacred Flame</a></li>
-                <li><a href="sanguineEmbrace.html">Sanguine Embrace</a></li>
-                <li><a href="gameRules.html">Game Rules</a></li>
-            </ul>
-        </nav>
+    <div class="navbar">
+        <a href="index.html">Home
+            <img class="logo" src="images/homebutton.png" alt="The Elements of Athaera Logo">
+        </a>
+        <a href="#news">News</a>
+        <div class="dropdown">
+            <button class="dropbtn">Dropdown
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
     </div>
     <header>
         <img id='banner' src="images/altbanner.png">
     </header>
     <main>
         <div class="pageHeadText">
-            <h2>The Elements of Athaera is a tabletop card game that combines strategy, skill and a roll of the dice to win!</h2>
+            <h2>The Elements of Athaera is a tabletop card game that combines strategy, skill and a roll of the dice to
+                win!</h2>
         </div>
         <div class="hero">
             <a href="sacredFlame.html">
@@ -51,7 +58,7 @@
             </a>
         </div>
         <div class="content">
-            
+
         </div>
     </main>
     <footer>
@@ -60,4 +67,5 @@
     <script src="scripts/script.js"></script>
     <script src="scripts/loadscript.js"></script>
 </body>
+
 </html>
