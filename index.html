@@ -14,20 +14,33 @@
 
 <body class="lexend">
     <div class="navbar">
-        <a href="index.html">Home
-            <img class="logo" src="images/homebutton.png" alt="The Elements of Athaera Logo">
-        </a>
-        <a href="#news">News</a>
+        <div>
+            <a class="activeLink" href="index.html">
+            <picture>
+                <source media="(min-width: 800px)" srcset="images/homebutton.png">
+                <source media="(max-width: 799px)" srcset="images/mobilelogo.png">
+                <img class="logo" src="images/mobilelogo.png" alt="The Elements of Athaera">
+            </picture>
+            </a>
+        </div>
         <div class="dropdown">
-            <button class="dropbtn">Dropdown
+            <button class="dropbtn">Structure Decks
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+                <a href="sacredFlame.html">The Sacred Flame</a>
+                <a href="sanguineEmbrace.html">The Sanguine Embrace</a>
             </div>
         </div>
+        <div class="dropdown">
+            <button class="dropbtn">Booster Packs
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="fateWeaver.html">Fateweaver</a>
+            </div>
+        </div>
+        <a id="nav-link" href="gameRules.html">Game Rules</a>
     </div>
     <header>
         <img id='banner' src="images/altbanner.png">

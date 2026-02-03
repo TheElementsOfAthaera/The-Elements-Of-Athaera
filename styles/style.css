@@ -4,6 +4,10 @@
     scrollbar-width: none;
 }
 
+html {
+    scroll-padding-top: 40px;
+}
+
 body {
 	background-color: #181818;
     color: white;
@@ -41,7 +45,6 @@ header {
     display: flex;
     background-color: black;
     border-bottom: 2px solid #252525;
-    z-index: 8;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, .3);
 }
 
@@ -68,6 +71,26 @@ header>img {
 .logo {
     height: 5vh;
     padding: 3px;
+}
+
+#nav-link {
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    -webkit-tap-highlight-color: transparent;
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, .5);
+}
+
+.activeLink {
+    background-color: #303030;
+    color: white;
+    font-weight: 400;
+    border-bottom: 2px solid rgb(251, 198, 24);
 }
 
 ul {
@@ -127,13 +150,6 @@ ul {
     margin: 10px;
     list-style-type: none;
     -webkit-tap-highlight-color: transparent;
-  }
-
-  .activeLink {
-    background-color: #303030;
-    color: white;
-    font-weight: 400;
-    border-bottom: 2px solid rgb(251, 198, 24);
   }
 
 .pageHeadText {
@@ -317,14 +333,21 @@ footer {
     .pageHeadText {
         font-size: 1.3rem;
     }
-    .logo {
-        src: "images/mobilelogo.png";
+    .sidenav {
+        width: 30%;
+    }
+    .rules-main {
+        margin-left: 30%;
     }
   }
 
+
 .navbar {
-  overflow: hidden;
-  background-color: #333;
+  background-color: #181818;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
 }
 
 .navbar a {
@@ -332,7 +355,7 @@ footer {
   font-size: 16px;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 2px 14px;
   text-decoration: none;
 }
 
@@ -350,34 +373,110 @@ footer {
   background-color: inherit;
   font-family: inherit;
   margin: 0;
+  z-index: 10;
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+  background-color: #252525;
+  z-index: 10;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #454545;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: 10;
 }
 
 .dropdown-content a {
   float: none;
-  color: black;
+  color: white;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
   text-align: left;
+  z-index: 10;
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: #505050;
+  color: rgb(251, 198, 24);
+  z-index: 10;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
+  z-index: 10;
+}
+
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top:20; /* Stay at the top */
+  left: 0;
+  background-color: #202020; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #c7c6c6;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: rgb(251, 198, 24);
+  border-left: 2px solid rgb(251, 198, 24);
+  transition: ease-in-out .1s;
+}
+
+/* Style page content */
+.rules-main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  box-sizing: border-box;
+  padding: 20px;
+  font-weight: 500;
+  color: rgb(201, 201, 201);
+}
+
+.rules-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    list-style-type: none;
+    pointer-events: none;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+section h2 {
+    color: rgb(248, 207, 72);
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+@media (max-width: 600px) {
+    .sidenav {
+        display: none;
+    }
+    .rules-main {
+        margin-left: 0;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
 }

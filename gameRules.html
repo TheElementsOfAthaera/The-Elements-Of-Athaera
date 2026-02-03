@@ -1,35 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     <title>Game Rules</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body class="lexend">
-    <div class="top-nav" loading="lazy">
-        <nav>
-            <ul>
-                <li><a href="index.html"><img id="logo" src="images/mobilelogo.png" alt="The Elements of Athaera Logo"></a></li>
-                <li><a href="sacredFlame.html">Sacred Flame</a></li>
-                <li><a href="sanguineEmbrace.html">Sanguine Embrace</a></li>
-                <li><a class="activeLink" href="gameRules.html">Game Rules</a></li>
-            </ul>
-        </nav>
+    <div class="navbar">
+        <div>
+            <a href="index.html">
+            <picture>
+                <source media="(min-width: 800px)" srcset="images/homebutton.png">
+                <source media="(max-width: 799px)" srcset="images/mobilelogo.png">
+                <img class="logo" src="images/mobilelogo.png" alt="The Elements of Athaera">
+            </picture>
+        </a>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Structure Decks
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="sacredFlame.html">The Sacred Flame</a>
+                <a href="sanguineEmbrace.html">The Sanguine Embrace</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Booster Packs
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="fateWeaver.html">Fateweaver</a>
+            </div>
+        </div>
+        <a class="activeLink" id="nav-link" href="gameRules.html">Game Rules</a>
     </div>
-    <header>
-        <img src="images/altbanner3.png">
-    </header>
     <main>
-        <h2>Page under construction</h2>
+        <div class="sidenav">
+            <a href="#introduction">Introduction</a>
+            <a href="#what-you-need">What you need</a>
+            <a href="#a-few-more-things">A few more things!</a>
+            <a href="#the-playing-field">The playing field</a>
+            <a href="#unit-cards-abilities">Unit cards & abilities</a>
+            <a href="#source-cards">Source cards</a>
+            <a href="#">Utility cards</a>
+            <a href="#">Summoning & Leveling</a>
+            <a href="#">Elemental types</a>
+            <a href="#">Starting a battle</a>
+            <a href="#">Turn Structure</a>
+            <a href="#">Battle Rules</a>
+            <a href="#">Reactions & Speeds</a>
+            <a href="#">Extra Information</a>
+        </div>
+
+        <!-- Page content -->
+        <div class="rules-main">
+            <section id="introduction">
+                <h2>Introduction</h2>
+                <p>Welcome to The Elements of Athaera! This rulebook is designed to help new players understand the
+                    basics of the game and get started on their journey to becoming a master strategist. Whether you're
+                    a seasoned card game player or new to the genre, this guide will provide you with the information
+                    you need to enjoy The Elements of Athaera.</p>
+            </section>
+            <section id="what-you-need">
+                <h2>What you need</h2>
+                <p>To play The Elements of Athaera, you'll need the following components:</p>
+                <ul class="rules-sections">
+                    <li>A deck of cards (either a pre-constructed deck or a custom-built deck)</li>
+                    <li>A six-sided die (d6) for resolving certain game effects</li>
+                    <li>A flat surface to play on</li>
+                    <li>Tokens or markers to track various game states (optional but recommended)</li>
+                </ul>
+            </section>
+            <section id="a-few-more-things">
+                <h2>A few more things!</h2>
+                <p>Before we dive into the rules, here are a few additional notes to keep in mind:</p>
+                <ul class="rules-sections">
+                    <li>The game is designed for two players, but can be adapted for multiplayer games with some
+                        modifications.</li>
+                    <li>Players should agree on any house rules or variations before starting the game.</li>
+                    <li>It's important to read and understand the card text carefully, as some cards may have unique
+                        effects that override standard rules.</li>
+                </ul>
+            </section>
+            <section id="the-playing-field">
+                <h2>The playing field</h2>
+                <p>The playing field is divided into several zones, each with its own purpose and rules. Understanding
+                    these zones is crucial for effective gameplay.</p>
+                <ul class="rules-sections">
+                    <li><strong>Deck Zone:</strong> This is where your deck of cards is placed at the start of the game.
+                        Players draw cards from this zone during their turns.</li>
+                    <li><strong>Hand Zone:</strong> This is where players hold their cards after drawing them from their
+                        deck. Players can have a maximum of seven cards in their hand at any time.</li>
+                    <li><strong>Battlefield Zone:</strong> This is where players play their unit cards to engage in
+                        battles. Each player has their own side of the battlefield.</li>
+                    <li><strong>Graveyard Zone:</strong> This is where discarded or destroyed cards are placed. Some
+                        cards may have effects that interact with the graveyard.</li>
+                </ul>
+            </section>
+            <section id="unit-cards-abilities">
+                <h2>Unit cards & abilities</h2>
+                <p>Unit cards are the backbone of your deck and are used to engage in battles against your opponent.
+                    Each unit card has its own stats and abilities that can influence the outcome of the game.</p>
+                <ul class="rules-sections">
+                    <li><strong>Attack Power:</strong> This stat determines how much damage a unit can deal during
+                        battles.</li>
+                    <li><strong>Health Points:</strong> This stat indicates how much damage a unit can take before being
+                        destroyed.</li>
+                    <li><strong>Abilities:</strong> Many unit cards have special abilities that can be activated during
+                        gameplay. These abilities can provide various effects, such as healing, buffing other units, or
+                        dealing additional damage.</li>
+                </ul>
+            </section>
+            <section id="source-cards">
+                <h2>Source cards</h2>
+                <p>Source cards provide players with resources needed to play unit cards and activate abilities.
+                    Managing your sources effectively is key to maintaining a strong presence on the battlefield.</p>
+                <ul class="rules-sections">
+                    <li><strong>Types of Sources:</strong> There are several types of source cards, each corresponding to
+                        different elements. Players can include multiple types of sources in their decks.</li>
+                    <li><strong>Generating Sources:</strong> Players can generate sources through various means, such as
+                        playing source cards from their hand or using abilities from unit cards.</li>
+                    <li><strong>Using Sources:</strong> Players must spend sources to play unit cards and activate
+                        abilities. Proper resource management is essential for success.</li>
+                </ul>
+            </section>
+            <section id="utility-cards">
+                <h2>Utility cards</h2>
+                <p>Utility cards offer a variety of effects that can turn the tide of battle in your favor. These cards
+                    can be played from your hand and often have unique conditions for their use.</p>
+                <ul class="rules-sections">
+                    <li><strong>Types of Utility Cards:</strong> Utility cards can include spells, traps, and other
+                        special effects that provide strategic advantages.</li>
+                    <li><strong>Playing Utility Cards:</strong> Players can play utility cards during their turn, often
+                        requiring specific conditions to be met.</li>
+                    <li><strong>Effects:</strong> The effects of utility cards can range from dealing damage to healing
+                        units, drawing additional cards, or manipulating the battlefield in various ways.</li>
+                </ul>
+            </section>
+            <section id="summoning-leveling">
+                <h2>Summoning & Leveling</h2>
+                <p>Details about summoning units and leveling them up will be provided here.</p>
+            </section>
+            <section id="elemental-types">          
+                <h2>Elemental types</h2>
+                <p>Details about the different elemental types in the game will be provided here.</p>
+            </section>
+            <section id="starting-a-battle">
+                <h2>Starting a battle</h2>
+                <p>Details about how to start a battle will be provided here.</p>
+            </section>
+            <section id="turn-structure">
+                <h2>Turn Structure</h2>
+                <p>Details about the turn structure will be provided here.</p>
+            </section>
+            <section id="battle-rules">
+                <h2>Battle Rules</h2>
+                <p>Details about the battle rules will be provided here.</p>
+            </section>
+            <section id="reactions-speeds">
+                <h2>Reactions & Speeds</h2>
+                <p>Details about reactions and speeds will be provided here.</p>
+            </section>
+            <section id="extra-information">
+                <h2>Extra Information</h2>
+                <p>Additional information about the game will be provided here.</p>
+            </section>
+        </div>
     </main>
     <footer>
         <p>&copy; 2025 The Elements of Athaera. All rights reserved.</p>
     </footer>
     <script defer src="scripts/loadscript.js"></script>
 </body>
+
 </html>
