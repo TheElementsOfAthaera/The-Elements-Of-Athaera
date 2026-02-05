@@ -69,18 +69,18 @@ header>img {
 }
 
 .logo {
-    height: 5vh;
+    height: 2.5rem;
     padding: 3px;
 }
 
 #nav-link {
-    height: 6vh;
+    height: 3rem;
     display: flex;
     align-items: center;
     color: white;
     text-align: center;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 400;
     -webkit-tap-highlight-color: transparent;
     text-shadow: 0px 2px 3px rgba(0, 0, 0, .5);
@@ -512,6 +512,7 @@ span {
     .navbar {
         display: flex;
         flex-direction: column;
+        position: relative;
     }
 }
 
