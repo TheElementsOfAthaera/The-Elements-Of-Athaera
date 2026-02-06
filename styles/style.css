@@ -429,6 +429,7 @@ grid-row-gap: 0px;
   background-color: #202020;
   overflow-x: hidden;
   padding-top: 20px;
+  padding-bottom: 40px;
 }
 
 .sidenav a {
