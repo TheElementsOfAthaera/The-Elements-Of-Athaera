@@ -11,37 +11,40 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body class="lexend">
-    <div class="navbar">
-        <div>
-            <a href="index.html">
-            <picture>
-                <source media="(min-width: 800px)" srcset="images/homebutton.png">
-                <source media="(max-width: 799px)" srcset="images/mobilelogo.png">
-                <img class="logo" src="images/mobilelogo.png" alt="The Elements of Athaera">
-            </picture>
-        </a>
-        </div>
-        <div class="dropdown">
-            <button class="dropbtn">Structure Decks
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="sacredFlame.html">The Sacred Flame</a>
-                <a href="sanguineEmbrace.html">The Sanguine Embrace</a>
+    <div class="navbar" id="mainNav">
+        <div class="parent">
+            <div class="div1"> <a href="index.html">
+                    <picture>
+                        <source media="(min-width: 800px)" srcset="images/homebutton.png">
+                        <source media="(max-width: 799px)" srcset="images/mobilelogo.png"> <img class="logo"
+                            src="images/mobilelogo.png" alt="The Elements of Athaera">
+                    </picture>
+                </a> </div>
+            <div class="div2">
+                <div class="dropdown"> <button class="dropbtn">Structure Decks</button>
+                    <div class="dropdown-content"> <a href="sacredFlame.html">The Sacred Flame</a> <a
+                            href="sanguineEmbrace.html">The Sanguine Embrace</a> </div>
+                </div>
+                <div class="dropdown"> <button class="dropbtn">Booster Packs</button>
+                    <div class="dropdown-content"> <a href="fateWeaver.html">Fateweaver</a> </div>
+                </div> <a id="nav-link" href="gameRules.html">Game Rules</a>
             </div>
+            <div class="div3"> <button id="menuButton"> <img src="images/hamburger.png"> </button> </div>
         </div>
-        <div class="dropdown">
-            <button class="dropbtn">Booster Packs
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="fateWeaver.html">Fateweaver</a>
+    </div> <!-- SECOND NAVBAR (hidden on desktop) -->
+    <div class="mobileMenu" id="mobileMenu">
+        <div class="div2">
+            <div class="dropdown"> <button class="dropbtn">Structure Decks</button>
+                <div class="dropdown-content"> <a href="sacredFlame.html">The Sacred Flame</a> <a
+                        href="sanguineEmbrace.html">The Sanguine Embrace</a> </div>
             </div>
+            <div class="dropdown"> <button class="dropbtn">Booster Packs</button>
+                <div class="dropdown-content"> <a href="fateWeaver.html">Fateweaver</a> </div>
+            </div> <a id="nav-link" href="gameRules.html">Game Rules</a>
         </div>
-        <a id="nav-link" href="gameRules.html">Game Rules</a>
     </div>
     <header>
-        <img src="images/altbanner.png">
+        <img id="banner" src="images/altbanner.png">
     </header>
     <main>
         <div class="heroPage">
@@ -99,5 +102,6 @@
         <p>&copy; 2025 The Elements of Athaera. All rights reserved.</p>
     </footer>
     <script defer src="scripts/loadscript.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>

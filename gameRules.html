@@ -13,37 +13,40 @@
 </head>
 
 <body class="lexend">
-    <div class="navbar">
-        <div>
-            <a href="index.html">
-            <picture>
-                <source media="(min-width: 800px)" srcset="images/homebutton.png">
-                <source media="(max-width: 799px)" srcset="images/mobilelogo.png">
-                <img class="logo" src="images/mobilelogo.png" alt="The Elements of Athaera">
-            </picture>
-        </a>
-        </div>
-        <div class="dropdown">
-            <button class="dropbtn">Structure Decks
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="sacredFlame.html">The Sacred Flame</a>
-                <a href="sanguineEmbrace.html">The Sanguine Embrace</a>
+    <div class="navbar" id="mainNav">
+        <div class="parent">
+            <div class="div1"> <a href="index.html">
+                    <picture>
+                        <source media="(min-width: 800px)" srcset="images/homebutton.png">
+                        <source media="(max-width: 799px)" srcset="images/mobilelogo.png"> <img class="logo"
+                            src="images/mobilelogo.png" alt="The Elements of Athaera">
+                    </picture>
+                </a> </div>
+            <div class="div2">
+                <div class="dropdown"> <button class="dropbtn">Structure Decks</button>
+                    <div class="dropdown-content"> <a href="sacredFlame.html">The Sacred Flame</a> <a
+                            href="sanguineEmbrace.html">The Sanguine Embrace</a> </div>
+                </div>
+                <div class="dropdown"> <button class="dropbtn">Booster Packs</button>
+                    <div class="dropdown-content"> <a href="fateWeaver.html">Fateweaver</a> </div>
+                </div> <a id="nav-link" href="gameRules.html">Game Rules</a>
             </div>
+            <div class="div3"> <button id="menuButton"> <img src="images/hamburger.png"> </button> </div>
         </div>
-        <div class="dropdown">
-            <button class="dropbtn">Booster Packs
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="fateWeaver.html">Fateweaver</a>
+    </div> <!-- SECOND NAVBAR (hidden on desktop) -->
+    <div class="mobileMenu" id="mobileMenu">
+        <div class="div2">
+            <div class="dropdown"> <button class="dropbtn">Structure Decks</button>
+                <div class="dropdown-content"> <a href="sacredFlame.html">The Sacred Flame</a> <a
+                        href="sanguineEmbrace.html">The Sanguine Embrace</a> </div>
             </div>
+            <div class="dropdown"> <button class="dropbtn">Booster Packs</button>
+                <div class="dropdown-content"> <a href="fateWeaver.html">Fateweaver</a> </div>
+            </div> <a id="nav-link" href="gameRules.html">Game Rules</a>
         </div>
-        <a class="activeLink" id="nav-link" href="gameRules.html">Game Rules</a>
     </div>
     <main>
-        <div class="sidenav">
+        <div class="sidenav" id="sideNavigation">
             <a href="#introduction">Introduction</a>
             <a href="#what-you-need">What you need</a>
             <a href="#a-few-more-things">A few more things!</a>
@@ -51,38 +54,53 @@
             <a href="#unit-cards-abilities">Unit cards & abilities</a>
             <a href="#source-cards">Source cards</a>
             <a href="#utility-cards">Utility cards</a>
-            <a href="#">Summoning & Leveling</a>
-            <a href="#">Elemental types</a>
-            <a href="#">Starting a battle</a>
-            <a href="#">Turn Structure</a>
-            <a href="#">Battle Rules</a>
-            <a href="#">Reactions & Speeds</a>
-            <a href="#">Extra Information</a>
+            <a href="#summoning-leveling">Summoning & Leveling</a>
+            <a href="#elemental-types">Elemental types</a>
+            <a href="#starting-a-battle">Starting a battle</a>
+            <a href="#turn-structure">Turn Structure</a>
+            <a href="#battle-rules">Battle Rules</a>
+            <a href="#reactions-speeds">Reactions & Speeds</a>
+            <a href="#extra-information">Extra Information</a>
         </div>
 
         <!-- Page content -->
         <div class="rules-main">
             <section id="introduction">
+                <p>
+                    <i>
+                        Rule books are included in some of the purchase options as they cost money to have printed.
+                        However, we don't think that it makes very much sense to charge players for the rules of the
+                        game. So, we've made the full rulebook available here for free!
+                    </i>
+                </p>
                 <h2>Introduction</h2>
                 <p>Welcome to The Elements of Athaera! This rulebook is designed to help new players understand the
                     basics of the game and get started on their journey to becoming a master strategist. Whether you're
                     a seasoned card game player or new to the genre, this guide will provide you with the information
                     you need to enjoy The Elements of Athaera.</p>
-                    <br>
+                <br>
                 <p>
-                    In this card game you will use your <span>Unit</span>, <span>Source</span>, and <span>Utility</span> cards to defend your castle while simultaneously trying to reduce your opponent(s) castle to rubble. Each castle has its own <span>Renown</span> and every battling player starts with <span>50 Renown</span>. <span>The first player to reduce their opponent's Renown to 0 wins the game!</span>
+                    In this card game you will use your <span>Unit</span>, <span>Source</span>, and <span>Utility</span>
+                    cards to defend your castle while simultaneously trying to reduce your opponent(s) castle to rubble.
+                    Each castle has its own <span>Renown</span> and every battling player starts with <span>50
+                        Renown</span>. <span>The first player to reduce their opponent's Renown to 0 wins the
+                        game!</span>
                 </p>
                 <br>
                 <p>
-                    The Elements of Athaera is commonly played with <span>2 players</span> but its unique design allows for an unlimited number of players to join the battle.
+                    The Elements of Athaera is commonly played with <span>2 players</span> but its unique design allows
+                    for an unlimited number of players to join the battle.
                 </p>
                 <br>
                 <p>
-                    An Elements of Athaera <span>card deck</span> and a set of <span>7 dice</span> will be needed to play.  These cards and dice will be used in a variety of ways to combat your opponent(s) and claim victory.
+                    An Elements of Athaera <span>card deck</span> and a set of <span>7 dice</span> will be needed to
+                    play. These cards and dice will be used in a variety of ways to combat your opponent(s) and claim
+                    victory.
                 </p>
                 <br>
                 <p>
-                    This is the official rulebook for The Elements of Athaera and should be referred to by all players for the basic rules of the game.  Let's get started!
+                    This is the official rulebook for The Elements of Athaera and should be referred to by all players
+                    for the basic rules of the game. Let's get started!
                 </p>
             </section>
             <br>
@@ -92,12 +110,17 @@
                 <p>To play The Elements of Athaera, you'll need the following components:</p>
                 <br>
                 <ul class="rules-sections">
-                    <li><span><strong>-Main Deck: </strong></span>You will need a main deck of <span
-                        >at least 40 cards</span> with <span
-                        >no more than 60</span>.
-                        <span>The maximum number of cards with the same name in your deck is 3</span>.</li>
-                    <li><span><strong>-Guardian Deck: </strong></span>A Guardian deck is <span>optional</span> but can have  <span>no more than 20 cards</span>.  We recommend that you grab at least a few Guardians!</li>
-                    <li><span><strong>-Support Deck: </strong></span>A support deck is a group of <span>up to 20 cards</span> that will not be placed on the game field, but will be reserved by you in order to <span>swap out cards from your Main or Support deck at a 1:1 ratio between match games</span>.</li>
+                    <li><span><strong>-Main Deck: </strong></span>You will need a main deck of <span>at least 40
+                            cards</span> with <span>no more than 60</span>.
+                        <span>The maximum number of cards with the same name in your deck is 3</span>.
+                    </li>
+                    <li><span><strong>-Guardian Deck: </strong></span>A Guardian deck is <span>optional</span> but can
+                        have <span>no more than 20 cards</span>. We recommend that you grab at least a few Guardians!
+                    </li>
+                    <li><span><strong>-Support Deck: </strong></span>A support deck is a group of <span>up to 20
+                            cards</span> that will not be placed on the game field, but will be reserved by you in order
+                        to <span>swap out cards from your Main or Support deck at a 1:1 ratio between match
+                            games</span>.</li>
                 </ul>
             </section>
             <br>
@@ -107,29 +130,48 @@
                 <p>Before we dive into the rules, here are a few additional notes to keep in mind:</p>
                 <br>
                 <ul class="rules-sections">
-                    <li><span><strong>-Dice: </strong></span>The Elements of Athaera relies on a standard set of <span>7 dice</span> to play. <span>-D4, D6, D8, D10, D12, D20, D100</span>.</li>
-                    <li><span><strong>-Counters: </strong></span>You may often find the need to count the amount of something on the field, such as <span>Essence</span>. Anything will work as long as its used too keep count and ins't obstructing other players or yourself!</li>
-                    <li><span><strong>-Pen, Paper, Calculator: </strong></span>This isn't necessary to play the game, although keeping track of your Unit health and Renown is the best way to know who wins or loses the game!</li>
+                    <li><span><strong>-Dice: </strong></span>The Elements of Athaera relies on a standard set of <span>7
+                            dice</span> to play. <span>-D4, D6, D8, D10, D12, D20, D100</span>.</li>
+                    <li><span><strong>-Counters: </strong></span>You may often find the need to count the amount of
+                        something on the field, such as <span>Essence</span>. Anything will work as long as its used too
+                        keep count and ins't obstructing other players or yourself!</li>
+                    <li><span><strong>-Pen, Paper, Calculator: </strong></span>This isn't necessary to play the game,
+                        although keeping track of your Unit health and Renown is the best way to know who wins or loses
+                        the game!</li>
                 </ul>
             </section>
             <br>
             <hr>
             <section id="the-playing-field">
                 <h2>The playing field</h2>
-                <p>The playing field is divided into <span> 7 zones for each player</span>, each with its own purpose and rules. Understanding
+                <p>The playing field is divided into <span> 7 zones for each player</span>, each with its own purpose
+                    and rules. Understanding
                     these zones is crucial for effective gameplay.</p>
-                    <br>
+                <br>
                 <ul class="rules-sections">
-                    <li><span><strong>-Battle Zone: </strong></span>This is where you <span>summon Unit cards</span> there is <span> no limit</span>, they must be summoned <span>vertically, face up or face down.</span></li>
-                    <li><span><strong>-Source & Utility: </strong></span>This is where you play <span>Source and Ulity cards</span>. They are played either <span>face-up</span>, or <span>face-down vertically</span>.</li>
-                    <li><span><strong>-Deck: </strong></span>Place your deck here, <span>face-down</span>.  Between <span>40-60 cards</span>.</li>
-                    <li><span><strong>-Crypt: </strong></span>When cards are <span>removed from the field</span>, they go to the Crypt.  This stack remains face-up and vertical.  Either player <span>may look at either Crypt willingly.</span></li>
-                    <li><span><strong>-Terrain: </strong></span>Only <span>1</span> Terrain card may be active at any given time <span>between BOTH players.  Placed <span>face-up verically</span>.</li>
-                    <li><span><strong>-Guardian: </strong></span>Place your Guardian deck <span>face-down vertically</span> between <span>0-20 cards</span>.</li>
-                    <li><span><strong>-Construct: </strong></span>Constructs are placed in the Construct Zone.  When adding Constructs to the zone, you <span>may reorganize the stack</span>. Constructs <span>prevent direct attack</span> unless specified by card effect.</li>
                     <picture>
                         <img id="playingfieldimage" src="images/playingfield.png">
                     </picture>
+                    <li><span><strong>-Battle Zone: </strong></span>This is where you <span>summon Unit cards</span>
+                        there is <span> no limit</span>, they must be summoned <span>vertically, face up or face
+                            down.</span></li>
+                    <li><span><strong>-Source & Utility: </strong></span>This is where you play <span>Source and Ulity
+                            cards</span>. They are played either <span>face-up</span>, or <span>face-down
+                            vertically</span>.</li>
+                    <li><span><strong>-Deck: </strong></span>Place your deck here, <span>face-down</span>. Between
+                        <span>40-60 cards</span>.
+                    </li>
+                    <li><span><strong>-Crypt: </strong></span>When cards are <span>removed from the field</span>, they
+                        go to the Crypt. This stack remains face-up and vertical. Either player <span>may look at either
+                            Crypt willingly.</span></li>
+                    <li><span><strong>-Terrain: </strong></span>Only <span>1</span> Terrain card may be active at any
+                        given time <span>between BOTH players. Placed <span>face-up verically</span>.</li>
+                    <li><span><strong>-Guardian: </strong></span>Place your Guardian deck <span>face-down
+                            vertically</span> between <span>0-20 cards</span>.</li>
+                    <li><span><strong>-Construct: </strong></span>Constructs are placed in the Construct Zone. When
+                        adding Constructs to the zone, you <span>may reorganize the stack</span>. Constructs
+                        <span>prevent direct attack</span> unless specified by card effect.
+                    </li>
                 </ul>
             </section>
             <br>
@@ -138,18 +180,27 @@
                 <h2>Unit cards & abilities</h2>
                 <p>Unit cards are the backbone of your deck and are used to engage in battles against your opponent.
                     Each unit card has its own stats and abilities that can influence the outcome of the game.</p>
-                    <br>
+                <br>
                 <ul class="rules-sections">
-                    <li><strong>Attack Power:</strong> This stat determines how much damage a unit can deal during
-                        battles.</li>
-                    <li><strong>Health Points:</strong> This stat indicates how much damage a unit can take before being
-                        destroyed.</li>
-                    <li><strong>Abilities:</strong> Many unit cards have special abilities that can be activated during
-                        gameplay. These abilities can provide various effects, such as healing, buffing other units, or
-                        dealing additional damage.</li>
                     <picture>
                         <img class="rulesimage" src="images/unitcards.png">
                     </picture>
+                    <li><span><strong>Health: </strong></span>If a unit takes damage, subtract from its
+                        <span>health</span>. Once health reaches <span>0</span>, the unit is <span>destroyed</span>.
+                        <span>Excess damage is subtracted from Renown after the unit is destroyed.</span>
+                    </li>
+                    <li><span><strong>Attack: </strong></span>Roll the listed <span>attack die</span> and add all
+                        bonuses. Weigh this against the <span>target's defense</span>,if you win <span>deal the
+                            difference in damage to the target</span>.</li>
+                    <li><span><strong>Defense: </strong></span>Roll the listed <span>defense die</span> and add all
+                        bonuses. Weigh this against the attacker's roll. If you win, take <span>no damage</span>.</li>
+                    <li><span><strong>Effects/Abilities: </strong>Effects</span> are <span>listed first</span>, followed
+                        by <span>Abilities</span>. Abilities cost <span>Essence</span> to use and may only be actived
+                        <span>once per turn, per card.</span> Cards must be <span>face-up</span> to be activated.
+                    </li>
+                    <li><span><strong>Guardian Unit: </strong></span>Guardian Units are special units that exceed level
+                        5. <span>"Ascension" must be used to summon a level 6 Unit, which can then level up normally
+                            every turn thereafter.</span></li>
                 </ul>
             </section>
             <br>
@@ -158,17 +209,16 @@
                 <h2>Source cards</h2>
                 <p>Source cards provide players with resources needed to play unit cards and activate abilities.
                     Managing your sources effectively is key to maintaining a strong presence on the battlefield.</p>
-                    <br>
+                <br>
                 <ul class="rules-sections">
-                    <li><strong>Types of Sources:</strong> There are several types of source cards, each corresponding to
-                        different elements. Players can include multiple types of sources in their decks.</li>
-                    <li><strong>Generating Sources:</strong> Players can generate sources through various means, such as
-                        playing source cards from their hand or using abilities from unit cards.</li>
-                    <li><strong>Using Sources:</strong> Players must spend sources to play unit cards and activate
-                        abilities. Proper resource management is essential for success.</li>
                     <picture>
                         <img class="rulesimage" src="images/sourcecards.png">
                     </picture>
+                    <li><span><strong>Sub-types: </strong></span>Terrain-Blessing-Curse-Ceremonial</li>
+                    <li><span><strong>Essence: </strong></span>Source cards can be <span>attached to Units</span> as
+                        <span>Essence</span> for ability use. If an ability is <span>negated</span> by card effect, the
+                        Essence is still <span>spent</span>.
+                    </li>
                 </ul>
             </section>
             <br>
@@ -177,55 +227,169 @@
                 <h2>Utility cards</h2>
                 <p>Utility cards offer a variety of effects that can turn the tide of battle in your favor. These cards
                     can be played from your hand and often have unique conditions for their use.</p>
-                    <br>
+                <br>
                 <ul class="rules-sections">
-                    <li><strong>Types of Utility Cards:</strong> Utility cards can include spells, traps, and other
-                        special effects that provide strategic advantages.</li>
-                    <li><strong>Playing Utility Cards:</strong> Players can play utility cards during their turn, often
-                        requiring specific conditions to be met.</li>
-                    <li><strong>Effects:</strong> The effects of utility cards can range from dealing damage to healing
-                        units, drawing additional cards, or manipulating the battlefield in various ways.</li>
                     <picture>
                         <img class="rulesimage" src="images/utilitycards.png">
                     </picture>
+                    <li><span><strong>Sub-types: </strong></span>Equip-Relic-Construct-Item-Currency</li>
+                    <li><span><strong>Rank: </strong></span>All Utility cards will have a <span>rank 1-3</span>,
+                        increasing in effectiveness.</li>
                 </ul>
             </section>
             <br>
             <hr>
             <section id="summoning-leveling">
                 <h2>Summoning & Leveling</h2>
-                <p>Details about summoning units and leveling them up will be provided here.</p>
+                <p>Summoning and Leveling up your Unit cards is the primary way to build your force against the opponent
+                    and maintain field control.</p>
+                <br>
+                <ul class="rules-sections">
+                    <li><span><strong>Roll Summoning: You may only roll summon ONCE per round.</strong></span> Roll a
+                        <span>D100 'percentile'</span> if the result is <span>equal to or lower</span> than the
+                        percentage listed on the Unit card, the <span>summon succeeds</span>. You may <span>roll before
+                            selecting a Unit to summon</span>.
+                    </li>
+                    <li><span><strong>Level-up Summoning: </strong></span> You may <span>level up summon ONCE per turn
+                            per Unit on the field</span>. This must happen in <span>numerical order, i.e. 1 to 2, 2 to
+                            3, etc.</span> You <span>cannot level up a Unit after that card has been CEREMONIAL summoned
+                            during that turn</span>.</li>
+                    <li><span><strong>Stealth Summoning: </strong></span> Roll summon, but place the card
+                        <span>face-down</span>, after at least one turn, you may reveal the card, thus completing a
+                        stealth summon.
+                    </li>
+                    <li><span><strong>Ceremonial Summoning: </strong></span>These are special types of summons that
+                        require <span>Source cards to complete</span>. <span>There is no limit to the amount.</span>
+                    </li>
+                </ul>
             </section>
-            <section id="elemental-types">          
+            <br>
+            <hr>
+            <section id="elemental-types">
                 <h2>Elemental types</h2>
-                <p>Details about the different elemental types in the game will be provided here.</p>
+                <p>Elements play a key role in The Elements of Athaera, Units will have different elemental types which
+                    grants them strengths and weaknesses in battle.</p>
+                <br>
+                <ul class="rules-sections">
+                    <picture>
+                        <img class="rulesimage" src="images/elementaltypes.png">
+                    </picture>
+                    <li><span><strong>Types: </strong></span> There are <span>8
+                            Elements;</span><br>FIRE-ICE-WIND-EARTH-LIGHTNING-WATER-LIGHT-DARK</li>
+                    <li><span><strong>Advantage: </strong></span>The number shown on the <span>Element Symbol</span>of a
+                        card is the advantage it has over other elements.<span> Add this value to your attack rolls with
+                            that card</span>.</li>
+                </ul>
             </section>
+            <br>
+            <hr>
             <section id="starting-a-battle">
-                <h2>Starting a battle</h2>
-                <p>Details about how to start a battle will be provided here.</p>
+                <h2>Starting a Battle</h2>
+                <p>The Battle itself is the actual gameplay where you engage in combat with your opponent using your
+                    summoned units and strategic plays.</p>
+                <br>
+                <ul class="rules-sections">
+                    <li><span><strong>Battle & Match: </strong></span> One game is called a Battle, best 2 out of 3
+                        battles is a match.</li>
+                    <li><span><strong>Winning: </strong></span> Reduce your opponent's <span>Renown to 0</span> to
+                        <span>win the battle</span>.
+                    </li>
+                    <li><span><strong>Losing: </strong></span> Having your <span>Renown reduced to 0</span> or
+                        <span>having no cards left in your deck to draw at the beginning of your turn</span>.
+                    </li>
+                    <li><span><strong>Procedure: </strong></span> <br>-All players must <span>shuffle their respective
+                            decks</span>, cut their opponents decks, and place their decks back in their respective deck
+                        zones. <br><br>-Place any <span>Guardian cards</span> in their respective <span>Guardian
+                            Zones</span>.<br><br>-Count your <span>Support deck</span> in front of your opponent and set
+                        it off to the side. <br><br>-All players roll a <span>D20</span> the <span>highest rolling
+                            player goes first.</span> After the battle, the winning player chooses who goes first in the
+                        next battle. <br><br>-<span>All players draw 6 cards</span>, the <span>player going first draws
+                            an additional card</span> as the beginning of their turn. <br><br>-The <span>FIRST round is
+                            a 'Round of Peace'</span> meaning that <span>no attacks may be made during this turn.</span>
+                    </li>
+                </ul>
             </section>
+            <br>
+            <hr>
             <section id="turn-structure">
                 <h2>Turn Structure</h2>
-                <p>Details about the turn structure will be provided here.</p>
+                <p>The structure of the player's turn is important to understanding when and how to play your cards
+                    effectively.
+                </p>
+                <br>
+                <ul class="rules-sections">
+                    <picture>
+                        <img class="rulesimage" src="images/turnstructure.png">
+                    </picture>
+                    <li><span><strong>Turn Structure is broken into 6 phases, listed above</strong></span>.</li>
+                </ul>
             </section>
+            <br>
+            <hr>
             <section id="battle-rules">
                 <h2>Battle Rules</h2>
-                <p>Details about the battle rules will be provided here.</p>
+                <p>General rules about Battles and gameplay are explained here.</p>
+                <br>
+                <ul class="rules-sections">
+                    <li><span><strong>Direct Attacks: </strong></span> Bypass enemey units on the battlefield and do
+                        damage to either the opponents <span>Construct or Renown.</span></li>
+                    <li><span><strong>Direct Ability damage: </strong></span>Cannot be defended against.</li>
+                    <li><span><strong>Shields: </strong></span>Regenerate <span>all damage during the Shield-users start
+                            phase</span>. Once a shield <span>reaches 0 health, it is destroyed.</span> Units cannot
+                        defend against attacks made to their Shields.</li>
+                    <li><span><strong>Damage over time effects: </strong></span>Last until <span>'Cured'</span>. To cure
+                        these effects, at the beginning of your <span>primary phase, roll the same sided dice that the
+                            damage was dealt with</span>. The result must be <span>equal to or greater than the original
+                            damage</span>.</li>
+                </ul>
             </section>
+            <br>
+            <hr>
             <section id="reactions-speeds">
-                <h2>Reactions & Speeds</h2>
-                <p>Details about reactions and speeds will be provided here.</p>
+                <h2>Reactions and Speeds</h2>
+                <p>Card effects have speeds at which they are activated and resolved in the effect chain.</p>
+                <br>
+                <ul class="rules-sections">
+                    <li><span><strong>Speeds: </strong></span> The speed at which card effects resolve is as follows
+                        from <span>fastest to slowest</span>.<br>-Instant<br>-Delayed<br>-Standard<br>-Perpetual</li>
+                    <li><span><strong>Instant: </strong></span>May be played <span>from the hand</span> on <span>either
+                            player's turn</span>.<br><br><span><strong>Unit: </strong></span>Attacks, effects and
+                        Summons are all <span>Standard speed</span>.</li>
+                    <li><span><strong>Reactions: </strong></span>Resolve <span>backwards</span> from the
+                        <span>final</span> card played.
+                    </li>
+                    <li><span><strong>Specific rules always win over general rules.</strong></span></li>
+                </ul>
             </section>
+            <br>
+            <hr>
             <section id="extra-information">
                 <h2>Extra Information</h2>
-                <p>Additional information about the game will be provided here.</p>
+                <p>Any extra information about the game will be provided here.</p>
+                <br>
+                <ul class="rules-sections">
+                    <li><span><strong>'Turn' vs 'Round': </strong></span> A 'Turn' is a player's turn in the game, while
+                        a 'Round' is a complete cycle of turns for all players in the game.</li>
+                    <li><span><strong>Turn player 'Priority': </strong></span> In the event that card speeds fall
+                        outside of normal rulings, the <span>turn-player takes priority</span>.</li>
+                    <li><span><strong>Decoy Units: </strong></span> Unit cards that can <span> ONLY be summoned by card
+                            effects</span>. Decoy Units have no stats, but may mimic the effects or stats of the card it
+                        was summoned by.</li>
+                    <li><span><strong>'Attack' vs 'Damage': </strong></span> An 'Attack' pertains only to the roll of
+                        the dice that was made to direct an attack at a target or player. 'Damage' applies to <span>BOTH
+                            Attack rolls and abilities</span>.</li>
+                </ul>
             </section>
+            <br>
+            <hr>
         </div>
     </main>
     <footer>
         <p>&copy; 2025 The Elements of Athaera. All rights reserved.</p>
     </footer>
     <script defer src="scripts/loadscript.js"></script>
+    <script src="scripts/script.js"></script>
+    <script> document.addEventListener("DOMContentLoaded", function () { const btn = document.getElementById("menuButton"); const menu = document.getElementById("mobileMenu"); if (btn && menu) { btn.addEventListener('click', function () { menu.classList.toggle("showMenu"); }); } }); </script>
 </body>
 
 </html>

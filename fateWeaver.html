@@ -1,44 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-    <title>The Sacred Flame</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <title>Fateweaver</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body class="lexend">
-    <div class="navbar">
-        <div>
-            <a href="index.html">
-            <picture>
-                <source media="(min-width: 800px)" srcset="images/homebutton.png">
-                <source media="(max-width: 799px)" srcset="images/mobilelogo.png">
-                <img class="logo" src="images/mobilelogo.png" alt="The Elements of Athaera">
-            </picture>
-        </a>
-        </div>
-        <div class="dropdown">
-            <button class="dropbtn">Structure Decks
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="sacredFlame.html">The Sacred Flame</a>
-                <a href="sanguineEmbrace.html">The Sanguine Embrace</a>
+    <div class="navbar" id="mainNav">
+        <div class="parent">
+            <div class="div1"> <a class="activeLink" href="index.html">
+                    <picture>
+                        <source media="(min-width: 800px)" srcset="images/homebutton.png">
+                        <source media="(max-width: 799px)" srcset="images/mobilelogo.png"> <img class="logo"
+                            src="images/mobilelogo.png" alt="The Elements of Athaera">
+                    </picture>
+                </a> </div>
+            <div class="div2">
+                <div class="dropdown"> <button class="dropbtn">Structure Decks</button>
+                    <div class="dropdown-content"> <a href="sacredFlame.html">The Sacred Flame</a> <a
+                            href="sanguineEmbrace.html">The Sanguine Embrace</a> </div>
+                </div>
+                <div class="dropdown"> <button class="dropbtn">Booster Packs</button>
+                    <div class="dropdown-content"> <a href="fateWeaver.html">Fateweaver</a> </div>
+                </div> <a id="nav-link" href="gameRules.html">Game Rules</a>
             </div>
+            <div class="div3"> <button id="menuButton"> <img src="images/hamburger.png"> </button> </div>
         </div>
-        <div class="dropdown">
-            <button class="dropbtn">Booster Packs
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="fateWeaver.html">Fateweaver</a>
+    </div> <!-- SECOND NAVBAR (hidden on desktop) -->
+    <div class="mobileMenu" id="mobileMenu">
+        <div class="div2">
+            <div class="dropdown"> <button class="dropbtn">Structure Decks</button>
+                <div class="dropdown-content"> <a href="sacredFlame.html">The Sacred Flame</a> <a
+                        href="sanguineEmbrace.html">The Sanguine Embrace</a> </div>
             </div>
+            <div class="dropdown"> <button class="dropbtn">Booster Packs</button>
+                <div class="dropdown-content"> <a href="fateWeaver.html">Fateweaver</a> </div>
+            </div> <a id="nav-link" href="gameRules.html">Game Rules</a>
         </div>
-        <a id="nav-link" href="gameRules.html">Game Rules</a>
     </div>
     <header>
         <img src="images/altbanner.png">
@@ -48,7 +53,8 @@
             <div>
                 <h2 class="pageHeadText">The <em><u>Fateweaver</u></em> booster pack</h2>
             </div>
-            <a href="https://www.thegamecrafter.com/games/the-elements-of-athaera-fateweaver-booster-pack" target="_blank">
+            <a href="https://www.thegamecrafter.com/games/the-elements-of-athaera-fateweaver-booster-pack"
+                target="_blank">
                 <div class="heroPageCard" id="sacredFlameHero">
                     <img id="sacredflame" src="images/FateWeaver.png">
                     <div id="sacredFlameText">
@@ -65,5 +71,8 @@
         <p>&copy; 2025 The Elements of Athaera. All rights reserved.</p>
     </footer>
     <script defer src="scripts/loadscript.js"></script>
+    <script src="scripts/script.js"></script>
+    <script> document.addEventListener("DOMContentLoaded", function () { const btn = document.getElementById("menuButton"); const menu = document.getElementById("mobileMenu"); if (btn && menu) { btn.addEventListener('click', function () { menu.classList.toggle("showMenu"); }); } }); </script>
 </body>
+
 </html>

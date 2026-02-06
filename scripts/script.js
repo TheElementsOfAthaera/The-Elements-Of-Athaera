@@ -18,3 +18,5 @@ var picPaths = ['images/altbanner.png', 'images/altbanner3.png']; // Array of im
   document.getElementById('banner').addEventListener('click', function() {
     window.location.href = 'index.html'; // Redirect to index.html on click
   });
+
+document.addEventListener("DOMContentLoaded", function () { const btn = document.getElementById("menuButton"); const menu = document.getElementById("mobileMenu"); if (btn && menu) { btn.addEventListener('click', function () { menu.classList.toggle("showMenu"); }); } });
