@@ -19,4 +19,26 @@ var picPaths = ['images/altbanner.png', 'images/altbanner3.png']; // Array of im
     window.location.href = 'index.html'; // Redirect to index.html on click
   });
 
-document.addEventListener("DOMContentLoaded", function () { const btn = document.getElementById("menuButton"); const menu = document.getElementById("mobileMenu"); if (btn && menu) { btn.addEventListener('click', function () { menu.classList.toggle("showMenu"); }); } });
+document.addEventListener("DOMContentLoaded", function () {
+
+    // MOBILE MENU TOGGLE
+    const btn = document.getElementById("menuButton");
+    const menu = document.getElementById("mobileMenu");
+
+    if (btn && menu) {
+        btn.addEventListener('click', function () {
+            menu.classList.toggle("showMenu");
+        });
+    }
+
+    // MOBILE DROPDOWN TOGGLES
+    const mobileDropdownButtons = document.querySelectorAll(".mobileMenu .dropbtn");
+
+    mobileDropdownButtons.forEach(button => {
+        button.addEventListener("click", function (e) {
+            e.preventDefault(); // prevent accidental navigation
+            const parent = this.parentElement;
+            parent.classList.toggle("open");
+        });
+    });
+});
