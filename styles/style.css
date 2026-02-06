@@ -1,7 +1,8 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    scrollbar-width: none;
+    scrollbar-width: thin;
+    scrollbar-color: #252525 #181818;
 }
 
 html {
@@ -424,7 +425,7 @@ grid-row-gap: 0px;
   height: 100%;
   width: 160px;
   position: fixed;
-  top:20;
+  top: 35px;
   background-color: #202020;
   overflow-x: hidden;
   padding-top: 20px;
@@ -580,7 +581,6 @@ span {
 
     .sidenav {
         left: -160px;
-        transition: left 0.3s ease-in-out;
     }
 
     .rules-main {
